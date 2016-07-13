@@ -1,8 +1,5 @@
-# React Webpack Starter
-Webpack 을 이용해 React.js 빠르게 개발하도록 도움을 주기 위해 만들어졌습니다.
-자세한 설명은 [REACT & WEBPACK STARTER](http://dalkstudy.github.io/react-webpack-starter)에서 확인 가능하며 아래 설명대로 진행하셔도 됩니다.
-
-[![Build Status](https://travis-ci.org/dalkstudy/react-webpack-starter.svg?branch=master)](https://travis-ci.org/dalkstudy/react-webpack-starter)
+# React Redux Webpack Starter
+react-webpack-starter를 redux 사용해서 다시 개발한 버전 입니다.
 
 # 빠르게 시작하기
 ### 선행 준비
@@ -12,14 +9,7 @@ Webpack 을 이용해 React.js 빠르게 개발하도록 도움을 주기 위해
 * 프로젝트 디렉토리에서 명령어를 실행합니다.
 
   ```
-  npm install --save react react-dom
-  npm install --save-dev babel-core babel-loader babel-preset-react webpack webpack-dev-server
-  ```
-
-* ES2015를 사용하려면 추가로 설치하세요.
-
-  ```
-  npm install --save-dev babel-preset-es2015
+  npm install
   ```
 
 ### 실행
@@ -30,6 +20,6 @@ Webpack 을 이용해 React.js 빠르게 개발하도록 도움을 주기 위해
   ```
 
 ### 확인
-* 브라우저로 [http://localhost:8485](http://localhost:8485) 접속합니다.
+* 브라우저로 [http://localhost:8585](http://localhost:8585) 접속합니다.
 
   <img src="http://i.giphy.com/l396Mg8wCujo9AoLe.gif">
