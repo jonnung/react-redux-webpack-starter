@@ -1,7 +1,8 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
     entry: {
-        app: './src/app.js',
-        example: './src/example.js'
+        app: './src/main.js'
     },
     output: {
         path: __dirname + '/dist',
@@ -10,7 +11,7 @@ module.exports = {
     },
     devServer: {
         inline: true,
-        port: 8485
+        port: 8585
     },
     module: {
         loaders: [
@@ -20,10 +21,17 @@ module.exports = {
                 exclude: /node_modules/,
                 query: {
                     cacheDirectory: true,
-                    presets: ['react']
+                    presets: ['es2015', 'react']
                 }
             }
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './src/index.html',
+            inject: 'body'
+        }),
+    ]
 };
 
